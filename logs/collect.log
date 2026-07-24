@@ -41201,3 +41201,7 @@
 2026-07-24 12:41:27 collected conn=8463 down=564931B/s up=940836B/s -> public/data/202607.json (9000 pts)
 2026-07-24 12:41:28 committed
 2026-07-24 12:43:31 collected conn=6194 down=17050351B/s up=2016339B/s -> public/data/202607.json (9000 pts)
+2026-07-24 12:47:26 committed
+2026-07-24 12:49:34 ERROR: SSH collection failed: spawnSync C:\ProgramData\chocolatey\bin\plink.exe ETIMEDOUT
+2026-07-24 12:51:39 ERROR: SSH collection failed: spawnSync C:\ProgramData\chocolatey\bin\plink.exe ETIMEDOUT
+2026-07-24 12:52:26 collected conn=10820 down=2039736B/s up=2416639B/s -> public/data/202607.json (9000 pts)
