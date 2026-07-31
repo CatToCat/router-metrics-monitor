@@ -62644,3 +62644,6 @@
 2026-08-01 00:33:26 collected conn=8196 down=8701782B/s up=3708374B/s -> public/data/202608.json (34 pts)
 2026-08-01 00:33:27 committed
 2026-08-01 00:34:26 collected conn=7839 down=13236841B/s up=3355570B/s -> public/data/202608.json (35 pts)
+2026-08-01 00:34:27 committed
+2026-08-01 00:35:42 ERROR: SSH collection failed: FATAL ERROR: Network error: Connection timed out
+2026-08-01 00:36:26 collected conn=10023 down=7257821B/s up=3052712B/s -> public/data/202608.json (36 pts)
