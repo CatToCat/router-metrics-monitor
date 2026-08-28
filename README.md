@@ -9,7 +9,8 @@ patterns and spot anomalies.
 
 The collector runs on an always-on Windows PC and reads router data over SSH in
 read-only mode (nothing is installed on the router itself): it collects once per
-minute and performs a local `git commit`, then pushes to the remote once per day.
+minute. A separate hourly task commits the accumulated data and pushes it to
+the remote, reducing Git index writes from about 1440 to 24 per day.
 
 ## Which metrics are collected
 
@@ -32,17 +33,17 @@ Copy-Item .env.example .env      # then edit .env with router address/password/W
 git remote add origin https://<username>:<token>@github.com/<username>/router-metrics-monitor.git
 
 # 2. Test once manually
-node scripts\router-metrics-collect.js    # prints: collected ... committed
-node scripts\git-push.js                  # prints: pushed OK
+node scripts\router-metrics-collect.js    # writes one data point, without Git
+node scripts\git-push.js                  # commits accumulated data and pushes it
 
-# 3. Register as scheduled tasks (collect every minute, push daily at 04:00); runs automatically once installed
+# 3. Register tasks (collect every minute, commit and push at the start of every hour)
 powershell -ExecutionPolicy Bypass -File init\install-cronjob-windows.ps1
 
 # Uninstall
 powershell -ExecutionPolicy Bypass -File init\uninstall-cronjob-windows.ps1
 ```
 
-Customize frequency: `install-cronjob-windows.ps1 -CollectMinutes 5 -PushAt 03:30`
+Customize collection frequency: `install-cronjob-windows.ps1 -CollectMinutes 5`
 Runtime logs are in `logs\collect.log` and `logs\push.log`.
 
 ## View locally

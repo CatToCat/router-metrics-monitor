@@ -3,22 +3,22 @@
 #   One-click registration of the collector / push scripts as Windows scheduled tasks
 #
 # Creates two tasks:
-#   RouterMetrics-Collect  runs scripts/router-metrics-collect.js every 1 minute by default
-#   RouterMetrics-Push     runs scripts/git-push.js once per day by default
+#   RouterMetrics-Collect  writes metrics every 1 minute by default
+#   RouterMetrics-Push     commits and pushes accumulated data every hour
 #
 # Usage (in the repo root, from an elevated PowerShell):
 #   powershell -ExecutionPolicy Bypass -File init\install-cronjob-windows.ps1
 #
-# Customize frequency / push time:
+# Customize collection frequency:
 #   powershell -ExecutionPolicy Bypass -File init\install-cronjob-windows.ps1 `
-#       -CollectMinutes 1 -PushAt 03:30
+#       -CollectMinutes 1
 #
 # To uninstall, run: init\uninstall-cronjob-windows.ps1
 # =============================================================
 
 param(
-    [int]$CollectMinutes = 1,     # collection frequency (minutes), default every minute
-    [string]$PushAt = "04:00"     # daily push time (local time), default 04:00
+    [ValidateRange(1, 59)]
+    [int]$CollectMinutes = 1
 )
 
 $ErrorActionPreference = 'Stop'
@@ -62,17 +62,19 @@ $collectTrigger = New-ScheduledTaskTrigger -Once -At (Get-Date) `
     -RepetitionInterval (New-TimeSpan -Minutes $CollectMinutes)
 Register-ScheduledTask -TaskName $TaskCollect -Action $collectAction -Trigger $collectTrigger `
     -Principal $principal -Settings $settings `
-    -Description "Router metrics collection (every ${CollectMinutes} min, local commit)" | Out-Null
+    -Description "Router metrics collection (write data every ${CollectMinutes} min)" | Out-Null
 Write-Host "Created: $TaskCollect (every $CollectMinutes min)" -ForegroundColor Green
 
-# ---- Push task: once per day ----
+# ---- Commit and push task: at the start of every hour ----
 Remove-IfExists $TaskPush
 $pushAction  = New-ScheduledTaskAction -Execute $node -Argument "`"$PushJs`"" -WorkingDirectory $RepoDir
-$pushTrigger = New-ScheduledTaskTrigger -Daily -At $PushAt
+$nextHour = (Get-Date).Date.AddHours((Get-Date).Hour + 1)
+$pushTrigger = New-ScheduledTaskTrigger -Once -At $nextHour `
+    -RepetitionInterval (New-TimeSpan -Hours 1)
 Register-ScheduledTask -TaskName $TaskPush -Action $pushAction -Trigger $pushTrigger `
     -Principal $principal -Settings $settings `
-    -Description "Router metrics push (daily at $PushAt, git push)" | Out-Null
-Write-Host "Created: $TaskPush (daily at $PushAt)" -ForegroundColor Green
+    -Description "Router metrics hourly commit and push" | Out-Null
+Write-Host "Created: $TaskPush (hourly, next run at $nextHour)" -ForegroundColor Green
 
 Write-Host ""
 Write-Host "Done! Check it in Task Scheduler, or test immediately:" -ForegroundColor Green

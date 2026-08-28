@@ -2,13 +2,11 @@
 /* =============================================================
  * git-push.js  -- push script (run with Node on a Windows PC)
  *
- * Pushes all the commits accumulated locally by router-metrics-collect.js
- * to the remote in one go. Triggered once per day by the Windows
- * "Task Scheduler" by default.
+ * Commits the data accumulated by router-metrics-collect.js and pushes it
+ * to the remote. Triggered once per hour by Windows Task Scheduler.
  *
  * Prerequisites: the repo already has a configured remote (HTTPS with token
- *       or SSH both work), and router-metrics-collect.js has produced some
- *       local commits.
+ *       or SSH both work), and router-metrics-collect.js has produced data.
  * ============================================================= */
 
 'use strict';
@@ -51,17 +49,15 @@ function git(args) {
 }
 
 try {
-  // First stage any uncommitted logs into a commit (so logs also enter the repo)
-  try {
-    git(['add', 'logs']);
-    let changed = false;
-    try { git(['diff', '--cached', '--quiet']); } catch (_) { changed = true; }
-    if (changed) {
-      git(['commit', '-m', `ci: ${fmtCST()} auto push`]);
-    }
-  } catch (_) { /* no logs or no changes, ignore */ }
+  git(['add', 'public/data', 'logs']);
+  let changed = false;
+  try { git(['diff', '--cached', '--quiet']); } catch (_) { changed = true; }
+  if (changed) {
+    git(['commit', '-m', `data: hourly sync ${fmtCST()}`]);
+    log('committed hourly data');
+  }
 
-  // Count unpushed commits (ignore errors when there is no remote tracking)
+  // Push an earlier commit too if the previous hourly network attempt failed.
   let ahead = 'unknown';
   try { ahead = git(['rev-list', '--count', `origin/${branch}..HEAD`]).trim(); } catch (_) {}
 

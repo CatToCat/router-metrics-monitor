@@ -7,11 +7,10 @@
  *   2. SSH into the router via plink and collect three metrics:
  *        active connections / download speed / upload speed
  *   3. Append to public/data/YYYYMM.json (one file per month)
- *   4. git add (data + logs) + commit (local commit only, no push)
+ *   4. Leave commit and push to the hourly git-push.js task
  *
- * Triggered by the Windows "Task Scheduler" every 1 minute by default
- * (see README / install-cronjob-windows.ps1 for deployment).
- * Pushing is handled by the separate git-push.js, run once per day by default.
+ * Triggered by the Windows "Task Scheduler" every 1 minute by default.
+ * Commit and push are handled by the separate git-push.js every hour.
  *
  * Dependency: plink (PuTTY). Install: choco install putty.portable
  * ============================================================= */
@@ -141,28 +140,15 @@ if (MAX_POINTS > 0 && list.length > MAX_POINTS) {
   list = list.slice(list.length - MAX_POINTS);
 }
 
-// Compact JSON (no spaces, no BOM)
+// Write through a temporary file so the hourly Git task never sees partial JSON.
 const json = '[' + list.map(r => '[' + r.join(',') + ']').join(',') + ']';
-fs.writeFileSync(dataFile, json, 'utf8');
+const tempFile = `${dataFile}.${process.pid}.tmp`;
+fs.writeFileSync(tempFile, json, 'utf8');
+try {
+  fs.renameSync(tempFile, dataFile);
+} catch (e) {
+  try { fs.unlinkSync(tempFile); } catch (_) {}
+  fail('failed to replace data file: ' + e.message);
+}
 
 log(`collected conn=${conn} down=${down}B/s up=${up}B/s -> public/data/${month}.json (${list.length} pts)`);
-
-// ---- git add + commit (local, no push) ----
-function git(cmdArgs) {
-  return execFileSync('git', cmdArgs, { cwd: REPO_DIR, encoding: 'utf8' });
-}
-try {
-  // Include the data file and the log file in the same commit
-  git(['add', `public/data/${month}.json`, 'logs/collect.log']);
-  // diff --cached --quiet exits with code 1 when there are changes
-  let changed = false;
-  try { git(['diff', '--cached', '--quiet']); } catch (_) { changed = true; }
-  if (changed) {
-    git(['commit', '-m', `data: ${fmtCST()} conn=${conn} down=${down} up=${up}`]);
-    log('committed');
-  } else {
-    log('no change to commit');
-  }
-} catch (e) {
-  fail('git operation failed: ' + (e.stderr || e.message || e).toString().trim());
-}
