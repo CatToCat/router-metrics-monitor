@@ -214012,3 +214012,54 @@ echo "$CONN $RX1 $TX1 $RX2 $TX2"
 2026-09-09 00:57:41 collected conn=20377 down=3984628B/s up=8300321B/s -> public/data/202609.json (9000 pts)
 2026-09-09 00:58:46 collected conn=18642 down=4193436B/s up=8110517B/s -> public/data/202609.json (9000 pts)
 2026-09-09 00:59:40 collected conn=19367 down=2525086B/s up=8090362B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:00:40 collected conn=17691 down=2115623B/s up=8262906B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:01:40 collected conn=17684 down=1569114B/s up=8958041B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:02:40 collected conn=16077 down=10298338B/s up=9347438B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:04:53 collected conn=13983 down=7177967B/s up=9472944B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:05:59 collected conn=14039 down=10012630B/s up=8913293B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:06:40 collected conn=14784 down=5943883B/s up=9182722B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:07:40 collected conn=14060 down=11843372B/s up=8888680B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:08:41 collected conn=17194 down=8960011B/s up=9179936B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:09:40 collected conn=18076 down=11500835B/s up=9381830B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:10:43 collected conn=18124 down=14080640B/s up=8819672B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:12:08 collected conn=15711 down=3799311B/s up=9092638B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:12:40 collected conn=17710 down=4084685B/s up=8606045B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:13:40 collected conn=14592 down=7418564B/s up=8651635B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:15:17 ERROR: SSH collection failed: spawnSync C:\ProgramData\chocolatey\bin\plink.exe ETIMEDOUT
+2026-09-09 01:15:40 collected conn=7119 down=634523B/s up=8378495B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:16:40 collected conn=4590 down=642258B/s up=7913242B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:17:41 collected conn=3228 down=528167B/s up=7767904B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:18:40 collected conn=2992 down=693532B/s up=8828263B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:19:40 collected conn=3105 down=565841B/s up=9317849B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:20:40 collected conn=2264 down=557488B/s up=8317132B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:21:40 collected conn=2175 down=446855B/s up=7923298B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:22:40 collected conn=2193 down=588863B/s up=8058417B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:23:40 collected conn=1804 down=584887B/s up=8851314B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:24:40 collected conn=1770 down=604864B/s up=8640218B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:25:40 collected conn=1846 down=465393B/s up=8060241B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:26:40 collected conn=1915 down=508299B/s up=7823816B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:27:49 collected conn=1874 down=517890B/s up=7657545B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:28:40 collected conn=1534 down=553584B/s up=8967188B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:29:40 collected conn=1674 down=19185110B/s up=8250460B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:30:40 collected conn=1953 down=451518B/s up=7727054B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:31:41 collected conn=2467 down=542841B/s up=8445848B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:34:09 ERROR: SSH collection failed: spawnSync C:\ProgramData\chocolatey\bin\plink.exe ETIMEDOUT
+2026-09-09 01:34:41 collected conn=2517 down=703731B/s up=8127484B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:35:41 collected conn=2175 down=941546B/s up=8051415B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:36:41 collected conn=2265 down=598675B/s up=8484909B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:39:05 ERROR: SSH collection failed: spawnSync C:\ProgramData\chocolatey\bin\plink.exe ETIMEDOUT
+2026-09-09 01:40:21 ERROR: SSH collection failed: spawnSync C:\ProgramData\chocolatey\bin\plink.exe ETIMEDOUT
+2026-09-09 01:42:58 ERROR: SSH collection failed: spawnSync C:\ProgramData\chocolatey\bin\plink.exe ETIMEDOUT
+2026-09-09 01:44:34 ERROR: SSH collection failed: spawnSync C:\ProgramData\chocolatey\bin\plink.exe ETIMEDOUT
+2026-09-09 01:46:57 ERROR: SSH collection failed: spawnSync C:\ProgramData\chocolatey\bin\plink.exe ETIMEDOUT
+2026-09-09 01:48:32 ERROR: SSH collection failed: spawnSync C:\ProgramData\chocolatey\bin\plink.exe ETIMEDOUT
+2026-09-09 01:50:55 ERROR: SSH collection failed: spawnSync C:\ProgramData\chocolatey\bin\plink.exe ETIMEDOUT
+2026-09-09 01:52:34 ERROR: SSH collection failed: spawnSync C:\ProgramData\chocolatey\bin\plink.exe ETIMEDOUT
+2026-09-09 01:52:41 collected conn=7534 down=90125719B/s up=7873006B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:53:40 collected conn=3520 down=1140405B/s up=8159796B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:54:40 collected conn=2840 down=2636390B/s up=8445138B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:55:40 collected conn=2385 down=2128525B/s up=8675997B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:56:40 collected conn=2654 down=3556409B/s up=8042223B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:57:40 collected conn=2400 down=1387132B/s up=7681328B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:58:41 collected conn=1994 down=1475311B/s up=8445133B/s -> public/data/202609.json (9000 pts)
+2026-09-09 01:59:40 collected conn=1800 down=1610404B/s up=9206572B/s -> public/data/202609.json (9000 pts)
