@@ -223485,3 +223485,47 @@ echo "$CONN $RX1 $TX1 $RX2 $TX2"
 2026-09-15 22:57:41 collected conn=3173 down=815723B/s up=8055098B/s -> public/data/202609.json (9000 pts)
 2026-09-15 22:58:41 collected conn=3863 down=1665243B/s up=7524784B/s -> public/data/202609.json (9000 pts)
 2026-09-15 22:59:41 collected conn=3669 down=1071002B/s up=8209005B/s -> public/data/202609.json (9000 pts)
+2026-09-15 23:00:41 collected conn=2938 down=751956B/s up=8719497B/s -> public/data/202609.json (9000 pts)
+2026-09-15 23:01:41 collected conn=3492 down=757191B/s up=7480648B/s -> public/data/202609.json (9000 pts)
+2026-09-15 23:02:41 collected conn=2982 down=455950B/s up=7350982B/s -> public/data/202609.json (9000 pts)
+2026-09-15 23:03:41 collected conn=3315 down=544004B/s up=8040311B/s -> public/data/202609.json (9000 pts)
+2026-09-15 23:04:41 collected conn=3021 down=2311400B/s up=8801608B/s -> public/data/202609.json (9000 pts)
+2026-09-15 23:05:41 collected conn=3042 down=1760073B/s up=8163884B/s -> public/data/202609.json (9000 pts)
+2026-09-15 23:06:41 collected conn=3267 down=506380B/s up=7393037B/s -> public/data/202609.json (9000 pts)
+2026-09-15 23:07:41 collected conn=2920 down=619435B/s up=7984542B/s -> public/data/202609.json (9000 pts)
+2026-09-15 23:08:41 collected conn=3073 down=774761B/s up=8271380B/s -> public/data/202609.json (9000 pts)
+2026-09-15 23:09:41 collected conn=2873 down=657419B/s up=8759470B/s -> public/data/202609.json (9000 pts)
+2026-09-15 23:10:41 collected conn=3161 down=1404599B/s up=8090986B/s -> public/data/202609.json (9000 pts)
+2026-09-15 23:11:41 collected conn=2987 down=666095B/s up=7632381B/s -> public/data/202609.json (9000 pts)
+2026-09-15 23:12:41 collected conn=3239 down=1177439B/s up=7420351B/s -> public/data/202609.json (9000 pts)
+2026-09-15 23:13:41 collected conn=3067 down=993449B/s up=8549470B/s -> public/data/202609.json (9000 pts)
+2026-09-15 23:14:41 collected conn=3299 down=655385B/s up=8803236B/s -> public/data/202609.json (9000 pts)
+2026-09-15 23:15:41 collected conn=2629 down=683952B/s up=8326482B/s -> public/data/202609.json (9000 pts)
+2026-09-15 23:16:41 collected conn=3499 down=1017489B/s up=7940053B/s -> public/data/202609.json (9000 pts)
+2026-09-15 23:17:41 collected conn=3095 down=619250B/s up=8188142B/s -> public/data/202609.json (9000 pts)
+2026-09-15 23:18:41 collected conn=3196 down=1238440B/s up=8646185B/s -> public/data/202609.json (9000 pts)
+2026-09-15 23:19:41 collected conn=3037 down=727420B/s up=8154323B/s -> public/data/202609.json (9000 pts)
+2026-09-15 23:20:41 collected conn=3184 down=525072B/s up=7642616B/s -> public/data/202609.json (9000 pts)
+2026-09-15 23:36:40 ERROR: SSH collection failed: FATAL ERROR: Remote side unexpectedly closed network connection
+2026-09-15 23:37:38 ERROR: SSH collection failed: FATAL ERROR: Remote side unexpectedly closed network connection
+2026-09-15 23:38:38 ERROR: SSH collection failed: FATAL ERROR: Remote side unexpectedly closed network connection
+2026-09-15 23:39:38 ERROR: SSH collection failed: FATAL ERROR: Remote side unexpectedly closed network connection
+2026-09-15 23:40:38 ERROR: SSH collection failed: FATAL ERROR: Remote side unexpectedly closed network connection
+2026-09-15 23:41:38 ERROR: SSH collection failed: FATAL ERROR: Remote side unexpectedly closed network connection
+2026-09-15 23:42:38 ERROR: SSH collection failed: FATAL ERROR: Remote side unexpectedly closed network connection
+2026-09-15 23:43:39 ERROR: SSH collection failed: FATAL ERROR: Remote side unexpectedly closed network connection
+2026-09-15 23:45:51 collected conn=3585 down=572325B/s up=8027860B/s -> public/data/202609.json (9000 pts)
+2026-09-15 23:46:40 collected conn=3583 down=596147B/s up=8034564B/s -> public/data/202609.json (9000 pts)
+2026-09-15 23:47:40 collected conn=3130 down=408553B/s up=7895410B/s -> public/data/202609.json (9000 pts)
+2026-09-15 23:48:40 collected conn=2762 down=491218B/s up=8165069B/s -> public/data/202609.json (9000 pts)
+2026-09-15 23:49:40 collected conn=3406 down=1285787B/s up=8456090B/s -> public/data/202609.json (9000 pts)
+2026-09-15 23:50:40 collected conn=3534 down=893891B/s up=8217873B/s -> public/data/202609.json (9000 pts)
+2026-09-15 23:51:40 collected conn=4895 down=446346B/s up=7538202B/s -> public/data/202609.json (9000 pts)
+2026-09-15 23:52:40 collected conn=3220 down=704735B/s up=7915837B/s -> public/data/202609.json (9000 pts)
+2026-09-15 23:53:40 collected conn=2588 down=676758B/s up=8574920B/s -> public/data/202609.json (9000 pts)
+2026-09-15 23:54:40 collected conn=2378 down=704900B/s up=8511526B/s -> public/data/202609.json (9000 pts)
+2026-09-15 23:55:40 collected conn=2515 down=591282B/s up=7418523B/s -> public/data/202609.json (9000 pts)
+2026-09-15 23:56:40 collected conn=2745 down=607754B/s up=7783931B/s -> public/data/202609.json (9000 pts)
+2026-09-15 23:57:40 collected conn=3054 down=653312B/s up=8035912B/s -> public/data/202609.json (9000 pts)
+2026-09-15 23:58:40 collected conn=2660 down=738888B/s up=8683382B/s -> public/data/202609.json (9000 pts)
+2026-09-15 23:59:40 collected conn=2634 down=627755B/s up=7890837B/s -> public/data/202609.json (9000 pts)
