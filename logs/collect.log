@@ -312400,3 +312400,63 @@ echo "$CONN $RX1 $TX1 $RX2 $TX2"
 2026-11-16 17:57:57 ERROR: SSH collection failed: FATAL ERROR: Network error: Connection timed out
 2026-11-16 17:58:57 ERROR: SSH collection failed: FATAL ERROR: Network error: Connection timed out
 2026-11-16 17:59:57 ERROR: SSH collection failed: FATAL ERROR: Network error: Connection timed out
+2026-11-16 18:00:41 collected conn=16766 down=523586B/s up=9702149B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:01:41 collected conn=16789 down=510869B/s up=10595710B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:02:44 collected conn=15882 down=507538B/s up=10295946B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:03:41 collected conn=15687 down=522754B/s up=10214154B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:04:41 collected conn=15505 down=508108B/s up=10497645B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:05:41 collected conn=15086 down=535450B/s up=10260057B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:06:41 collected conn=14994 down=512028B/s up=10295875B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:07:57 ERROR: SSH collection failed: FATAL ERROR: Network error: Connection timed out
+2026-11-16 18:08:41 collected conn=15559 down=792434B/s up=10822307B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:09:41 collected conn=16028 down=528163B/s up=10711348B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:10:44 collected conn=16966 down=514133B/s up=10639246B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:11:44 collected conn=17596 down=509432B/s up=10455957B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:12:41 collected conn=17769 down=521948B/s up=10523286B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:13:44 collected conn=16974 down=517698B/s up=9952571B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:14:41 collected conn=17675 down=531015B/s up=10760523B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:15:41 collected conn=18413 down=546605B/s up=10368875B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:16:50 collected conn=17621 down=529788B/s up=10680810B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:17:41 collected conn=17318 down=524046B/s up=10192740B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:18:41 collected conn=16678 down=597242B/s up=10837273B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:19:41 collected conn=16095 down=541098B/s up=10158385B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:20:41 collected conn=16732 down=553377B/s up=10455633B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:21:41 collected conn=19494 down=556700B/s up=10774572B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:22:41 collected conn=16849 down=537569B/s up=10450970B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:23:50 collected conn=11029 down=1038980B/s up=8164703B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:24:41 collected conn=7582 down=1332080B/s up=8105286B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:25:44 collected conn=4734 down=576922B/s up=7804513B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:26:50 collected conn=3985 down=992947B/s up=8552887B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:27:44 collected conn=3351 down=770209B/s up=8303771B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:28:41 collected conn=3924 down=720452B/s up=8975712B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:29:44 collected conn=8426 down=816860B/s up=9626597B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:30:41 collected conn=12857 down=490267B/s up=10271051B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:31:57 ERROR: SSH collection failed: FATAL ERROR: Network error: Connection timed out
+2026-11-16 18:32:57 ERROR: SSH collection failed: FATAL ERROR: Network error: Connection timed out
+2026-11-16 18:33:41 collected conn=15740 down=555087B/s up=10778076B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:34:41 collected conn=17481 down=2540585B/s up=10592122B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:35:44 collected conn=18504 down=537122B/s up=10917679B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:36:41 collected conn=18679 down=504390B/s up=10598921B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:37:57 ERROR: SSH collection failed: FATAL ERROR: Network error: Connection timed out
+2026-11-16 18:38:41 collected conn=19331 down=534435B/s up=10306201B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:39:41 collected conn=19335 down=543622B/s up=10472555B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:40:44 collected conn=20312 down=517205B/s up=10782002B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:41:44 collected conn=19618 down=540856B/s up=11017395B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:42:57 ERROR: SSH collection failed: FATAL ERROR: Network error: Connection timed out
+2026-11-16 18:43:44 collected conn=20985 down=555295B/s up=10808707B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:44:50 collected conn=20643 down=512578B/s up=10433586B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:45:57 ERROR: SSH collection failed: FATAL ERROR: Network error: Connection timed out
+2026-11-16 18:46:57 ERROR: SSH collection failed: FATAL ERROR: Network error: Connection timed out
+2026-11-16 18:47:41 collected conn=17397 down=567064B/s up=10548339B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:48:57 ERROR: SSH collection failed: FATAL ERROR: Network error: Connection timed out
+2026-11-16 18:49:41 collected conn=16624 down=536338B/s up=10394721B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:50:44 collected conn=16741 down=495097B/s up=9466014B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:51:57 ERROR: SSH collection failed: FATAL ERROR: Network error: Connection timed out
+2026-11-16 18:52:41 collected conn=17905 down=598516B/s up=10739296B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:53:41 collected conn=17017 down=3200996B/s up=10598923B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:54:41 collected conn=17554 down=2298525B/s up=10701475B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:55:41 collected conn=17788 down=577494B/s up=10484044B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:56:41 collected conn=18349 down=3198282B/s up=11069960B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:57:50 collected conn=18314 down=2309991B/s up=10677619B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:58:50 collected conn=18998 down=969108B/s up=10162286B/s -> public/data/202611.json (9000 pts)
+2026-11-16 18:59:57 ERROR: SSH collection failed: FATAL ERROR: Network error: Connection timed out
